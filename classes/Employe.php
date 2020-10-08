@@ -19,6 +19,15 @@ class Employe
     protected float $salaireM;
     private const SALAIREMIN = 1000;
     
+    
+    /**
+     * Constructeur
+     * @param int $pnum
+     * @param string $pnom
+     * @param string $pprenom
+     * @param DateTime $pddn
+     * @param float $psalaire
+     */
     public function __construct(int $pnum, string $pnom, string $pprenom, DateTime $pddn, float $psalaire)
     {
         $this->numero = $pnum;

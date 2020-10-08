@@ -7,9 +7,10 @@ include 'classes/employe.php';
 include 'includes/traitement.php';
 
 try {
-  Traitement::instanciationUnEmploye();
+  /*Traitement::instanciationUnEmploye();
   Traitement::instanciationUnEmployeErreur();
-  Traitement::instanciationUnEmploye();
+  Traitement::instanciationUnEmploye();*/
+  Traitement::instanciationProjetV1();
 } catch (Exception $ex) {
   echo $ex->getMessage();
 }
