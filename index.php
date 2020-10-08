@@ -4,6 +4,7 @@
  */
 
 include 'classes/employe.php';
+include 'classes/projet.php';
 include 'includes/traitement.php';
 
 try {

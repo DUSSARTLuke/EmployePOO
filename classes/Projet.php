@@ -12,10 +12,11 @@
  */
 class Projet
 {
+
   private string $codeProjet;
   private string $nomProjet;
   private int $dureePrevue;
-  
+
   /**
    * Constructeur
    * @param string $codeProjet
@@ -28,6 +29,7 @@ class Projet
     $this->nomProjet = $nomProjet;
     $this->dureePrevue = $dureePrevue;
   }
+
   function getCodeProjet(): string
   {
     return $this->codeProjet;
@@ -47,7 +49,8 @@ class Projet
   {
     $this->dureePrevue = $dureePrevue;
   }
-
-
-  
+  public function __toString()
+  {
+    return "Projet : " .$this->getCodeProjet() . " - " . $this->getNomProjet() . " - " . $this->getDureePrevue();
+  }
 }

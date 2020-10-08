@@ -27,7 +27,7 @@ class Traitement
   
   public static function instanciationProjetV1() : void{
     $p = new projet("PR7", "Librairie Gelistout", 102);
-    echo $p;
-    //echo "Nom du projet" . $p->getNomProjet(); 
+    //echo $p;
+    echo "Nom du projet = " . $p->getNomProjet(); 
   }
 }
