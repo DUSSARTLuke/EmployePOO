@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<!--
-coucou
--->
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title></title>
-  </head>
-  <body>
-      <?php
-      // put your code here
+<?php
+/*
+ * Fichier index.php principal
+ */
 
-      ?>
-  </body>
-</html>
+include 'classes/employe.php';
+include 'includes/traitement.php';
+
+try {
+  Traitement::instanciationUnEmploye();
+} catch (Exception $ex) {
+  echo $ex->getMessage();
+}
